@@ -1,0 +1,12 @@
+/*
+ * User details CSS
+ */
+
+.user-detail.row table th {
+	text-align: right;
+	font-weight: 300;
+}
+.user-detail.row table td {
+	font-weight: 600;
+}
+

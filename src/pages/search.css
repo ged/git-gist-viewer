@@ -1,0 +1,22 @@
+/*
+ * Search results styles
+ */
+
+.user-search-results.row ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.user-search-results.row ul li {
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+}
+
+.user-search-results.row ul li img {
+	border-radius: 50px;
+}
+
+

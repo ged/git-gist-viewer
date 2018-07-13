@@ -1,0 +1,41 @@
+<template>
+
+	<require from="./search.css"></require>
+
+	<div class="row">
+		<h1>Github Gists</h1>
+
+		<form accept-charset="utf-8">
+			<div class="ten columns">
+				<input type="text" name="query" value.bind="query" id="query"
+					class="u-full-width"
+					placeholder="Search for Github users">
+			</div>
+
+			<div class="two columns">
+				<button click.delegate="search(query)"
+					class="button-primary"
+					disabled.bind="query === '' || submitting">Search</button>
+			</div>
+		</form>
+	</div>
+
+	<div show.bind="users" class="user-search-results row">
+		<div class="twelve columns">
+
+			<h2>Results</h2>
+
+	    <ul>
+				<li repeat.for="user of users.items">
+					<a route-href="route: userDetail; params.bind: { name: user.login }">
+						<img src.bind="user.avatar_url" height="50" width="50">
+						<p>${user.login}</p>
+					</a>
+				</li>
+	    </ul>
+
+		</div>
+	</div>
+
+</template>
+

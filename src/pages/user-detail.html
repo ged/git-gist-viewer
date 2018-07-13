@@ -1,0 +1,49 @@
+<template>
+
+	<require from="./user-detail.css"></require>
+
+	<div class="user-detail row" show.bind="user">
+		<div class="four columns">
+			<h3>${user.name}</h3>
+
+			<img src.bind="user.avatar_url" class="u-max-full-width">
+
+			<table class="u-full-width">
+				<tbody>
+					<tr>
+						<th>id</th>
+						<td>${user.id}</td>
+					</tr>
+
+					<tr>
+						<th>login</th>
+						<td>${user.login}</td>
+					</tr>
+
+					<tr>
+						<th>company</th>
+						<td>${user.company}</td>
+					</tr>
+
+					<tr>
+						<th>email</th>
+						<td>${user.email || '-'}</td>
+					</tr>
+
+					<tr>
+						<th>since</th>
+						<td>${user.created_at | dateFormat:'kkkk'}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p show.bind="user.bio">${user.bio}</p>
+		</div>
+
+		<div class="eight columns">
+			<p>Gists, eventually.</p>
+		</div>
+	</div>
+
+</template>
+
