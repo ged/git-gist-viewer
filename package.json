@@ -1,12 +1,12 @@
 {
   "name": "git-gist-viewer",
-  "description": "An Aurelia client application.",
+  "description": "An Aurelia app used to search users and view their Github information.",
   "version": "0.1.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/ged/git-gist-viewer"
   },
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "aurelia-animator-css": "^1.0.4",
     "aurelia-bootstrapper": "^2.2.0",
