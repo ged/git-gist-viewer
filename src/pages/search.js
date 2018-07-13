@@ -37,6 +37,9 @@ export class Search {
 					this.users = users;
 				}).
 				catch( err => this.error = err );
+		} else {
+			routeConfig.navModel.setTitle( 'Search' );
+			this.users = null;
 		}
 	}
 
