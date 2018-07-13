@@ -1,3 +1,14 @@
 {
-  "extends": "./node_modules/aurelia-tools/.eslintrc.json"
+  "extends": "./node_modules/aurelia-tools/.eslintrc.json",
+  "rules": {
+	  "indent": ["error", "tab"],
+	  "quotes": "off",
+	  "no-else-return": "off",
+	  "one-var": "off",
+	  "brace-style": "off",
+	  "padded-blocks": "off",
+	  "space-infix-ops": "off",
+	  "key-spacing": "off"
+  }
 }
+

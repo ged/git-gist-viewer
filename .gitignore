@@ -29,3 +29,8 @@ node_modules
 
 # Compiled files
 scripts
+
+# Test output
+test/coverage-karma/
+test/coverage-jest/
+
