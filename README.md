@@ -2,6 +2,10 @@
 
 This is just a minimal Aurelia app to be able to easily compare a similar app to [a React equivalent](https://github.com/TerrenceLJones/git-gist-viewer) built with (mostly) the same technology.
 
+It looks like this:
+
+![Movie](https://www.dropbox.com/s/0ii26d0molq6pth/AureliaGists.mp4?dl=0)
+
 
 ## Aurelia Resources
 
