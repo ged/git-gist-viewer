@@ -12,7 +12,7 @@ export class GithubClient {
 	constructor() {
 		this.logger = LogManager.getLogger( 'github-client' );
 		this.http = axios.create({
-			baseUrl: this.constructor.serviceUrl
+			baseURL: this.constructor.serviceUrl
 		});
 	}
 
